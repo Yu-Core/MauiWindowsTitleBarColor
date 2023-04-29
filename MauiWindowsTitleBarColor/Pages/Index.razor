@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+You can click the button to switch colors
+
+@foreach (var item in ColorButtons)
+{
+    <button @onclick="()=>ChangeColor(item.Value)">@item.Key</button>
+}
+
+@code{
+    private Dictionary<string, Color> ColorButtons = new()
+    {
+        {"Red",Colors.Red},
+        {"Yellow",Colors.Yellow},
+        {"Blue",Colors.Blue},
+        {"Green",Colors.Green},
+        {"White",Colors.White},
+        {"Black",Colors.Black},
+    };
+
+    private void ChangeColor(Color color)
+    {
+        #if WINDOWS
+    //The first parameter is the background color of the title bar, and the second parameter is the text color of the title bar
+    WindowsTitleBar.SetColorForWindows(color,Colors.White);
+        #endif
+    }
+}
