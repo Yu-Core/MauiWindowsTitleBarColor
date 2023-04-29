@@ -1,7 +1,8 @@
 # MauiWindowsTitleBarColor
 
 You can freely change MAUI Windows title bar color
-support Win 10/11
+
+Support Win 10/11
 
 install [PInvoke.User32](https://www.nuget.org/packages/PInvoke.User32/0.7.124)
 
