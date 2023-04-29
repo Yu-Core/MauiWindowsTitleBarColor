@@ -10,11 +10,10 @@ Copy [https://github.com/Yu-Core/MauiWindowsTitleBarColor/blob/master/MauiWindow
 
 Use
 ```
-        #if WINDOWS
-    //The first parameter is the background color of the title bar, and the second parameter is the text color of the title bar
-    WindowsTitleBar.SetColorForWindows(color,Colors.White);
-        #endif
+#if WINDOWS
+        //The first parameter is the background color of the title bar, and the second parameter is the text color of the title bar
+        WindowsTitleBar.SetColorForWindows(backgroundColor,foregroundColor);
+#endif
 ```
 
 https://user-images.githubusercontent.com/96511239/235290220-2de573ad-1f37-46f7-ac84-56c804f333d7.mp4
-
