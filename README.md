@@ -1,6 +1,6 @@
 # MauiWindowsTitleBarColor
 
-You can freely change the color of the MAUI Windows title bar color
+You can freely change MAUI Windows title bar color
 
 install [PInvoke.User32](https://www.nuget.org/packages/PInvoke.User32/0.7.124)
 
